@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Casona 1530 | Huesped</title>
+    <link rel="icon" href="../assets/img/miniLogo 1530.jpeg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base/base.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/header.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/table.css" />
+    <link rel="stylesheet" href="/assets/css/lista_cliente.css">
+    
+    <link rel="stylesheet" href="../assets/css/componentes/button.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/modal.css" />
+    <link rel="stylesheet" href="../assets/css/base/_reset.css">
+    <link rel="stylesheet" href="../assets/css/base/_variables.css"/>
+  </head>
+  <body>
+    <header class="header container">
+      <img
+        src="../assets/img/Logo 1530.png"
+        alt="Logotipo Hotel"
+        class="header__logo"
+      />
+      <nav>
+        <ul class="header__list-nav">
+          <li class="header__link"><a href="index.html">Inicio</a></li>
+          <li class="header__link">
+            <a href="Password_room.html" class="header__link" >Huespedes </a>
+          </li>
+          <li class="header__link"><a href="#">Habitaciones</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="clientes-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="table__column--p">Habitacion</th>
+            <th class="table__column--p">Nombre</th>
+            <th class="table__column--g">Phone</th>
+            <th class="table__column--m table__align--right">
+              <a
+                href="./registrar_cliente.html"
+                class="simple-button simple-button--add"
+                ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                  <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"/>
+                </svg> Nuevo Huesped </a
+              >
+            </th>
+          </tr>
+        </thead>
+        <tbody data-table>
+        
+        </tbody>
+      </table>
+      <div class="modal-container modal--close">
+        <article class="modal">
+          <h2 class="modal__title">Eliminar</h2>
+          <button class="modal__close">X</button>
+          <p class="modal__text">¿Deseas continuar?</p>
+          <div class="modal__button-container">
+            <button class="modal__button modal__button--delete">
+              Eliminar
+            </button>
+            <button class="modal__button">No eliminar</button>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script src="../controllers/client.controller.unclock.js" type="module"></script>
+  </body>
+</html>

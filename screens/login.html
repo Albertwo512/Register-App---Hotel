@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Casona 1530</title>
+    <link rel="icon" href="../assets/img/miniLogo 1530.jpeg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base/base.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/header.css" />
+    <link rel="stylesheet" href="../assets/css/register_complete.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/card.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/button.css" />
+  </head>
+  <body class="index">
+    <header class="header container headerIndex">
+      <img
+        src="../assets/img/Logo 1530.png"
+        alt="Logotipo Hotel"
+        class="header__logo"
+      />
+      <nav>
+        <ul class="header__list-nav">
+          <li class="header__link"><a href="index.html">Inicio</a></li>
+          <li class="header__link">
+            <a href="Password_room.html" class="header__link" >Huespedes </a>
+          </li>
+          <li class="header__link"><a href="#">Habitaciones</a></li>
+          <li class="header__link"><a href="login.html">Iniciar Sesion</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container flex flex--column flex--center">
+      <section id="card-pass" class="register-card card">
+        <img
+        src="../assets/img/Logo 1530.png"
+        alt="Logotipo Hotel"
+        class="header__logo"
+      />
+        <h1 class="register-card__title card__title">Iniciar Sesion</h1>
+        <div class="input-container">
+          <input
+            name="password"
+            id="sesionNombre"
+            class="input inputs"
+            type="text"
+            placeholder="Contraseña:"
+            required
+          />
+          <label class="input-label" for="nombre">Nombre</label>
+          <span class="input-menssage-error">Este campo es requerido</span>
+        </div>
+        <div class="input-container">
+          <input
+            name="password"
+            id="sesionPassword"
+            class="input inputs"
+            type="password"
+            placeholder="Contraseña:"
+            required
+          />
+          <label class="input-label" for="nombre">Contraseña</label>
+          <span class="input-menssage-error">Este campo es requerido</span>
+        </div>
+        <button id="login" class="button">Ingresar</button>
+      </section>
+    </main>
+  </body>
+  <script type="module" src="../controllers/empleados.js"></script>
+  <script src="../service/empleados-services.js"></script>
+</html>

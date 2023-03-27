@@ -1,0 +1,50 @@
+@import url(/assets/css/base/_variables.css);
+
+.register-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.register-card__icon-complete {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  background-image: url(../img/checkmark.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.register-card__title {
+  max-width: 30rem;
+}
+
+#current_date {
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  margin-top: 4rem;
+  color: #9c910f;
+  
+  /*
+  color: #9c910f;
+  */
+  -webkit-text-stroke: 2px black;
+
+}
+
+#titulo-inicio-nombre {
+  font-family: 'Pacifico', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  margin-top: 2rem;
+  color: #9c910f;
+  -webkit-text-stroke: 2px black;
+
+}

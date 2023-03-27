@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Casona 1530 | Huesped</title>
+    <link rel="icon" href="../assets/img/miniLogo 1530.jpeg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base/base.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/header.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/table.css" />
+    <link rel="stylesheet" href="/assets/css/lista_cliente.css">
+    
+    <link rel="stylesheet" href="../assets/css/componentes/button.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/modal.css" />
+    <link rel="stylesheet" href="../assets/css/base/_reset.css">
+    <link rel="stylesheet" href="../assets/css/base/_variables.css"/>
+  </head>
+  <body>
+    <header class="header container">
+      <img
+        src="../assets/img/Logo 1530.png"
+        alt="Logotipo Hotel"
+        class="header__logo"
+      />
+      <nav>
+        <ul class="header__list-nav">
+          <li class="header__link"><a href="index.html">Inicio</a></li>
+          <li class="header__link">
+            <a href="Password_room.html" class="header__link" >Huespedes </a>
+          </li>
+          <li class="header__link"><a href="#">Habitaciones</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="clientes-container ">
+          <a
+          href="./lista_cliente.html"
+          class="simple-button "
+          ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+            <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z"/>
+          </svg> Volver </a
+        >
+      </th>
+      
+      <th class="table__column--m table__align--right">
+      
+      <div class="scroller">
+
+      
+      <table class="table scroller">
+        <thead>
+          <tr class="">
+            <th class="table__column--p">Habitacion</th>
+            <th class="table__column--p">Nombre</th>
+            <th class="table__column--g">Phone</th>
+            <th class="table__column--p">Email</th>
+            <th class="table__column--p">Pais</th>
+            <th class="table__column--p">Ciudad</th>
+            <th class="table__column--p">Placas Auto</th>
+            <th class="table__column--g">Clave Elector</th>
+            <th class="table__column--g">Factura</th>
+            <th class="table__column--g">Datos Factura</th>
+            <th class="table__column--g">Check-In</th>
+            <th class="table__column--g">Check-Out</th>
+            <th class="table__column--g">Forma de pago</th>
+            <th class="table__column--g">Atendio</th>
+            <th class="table__column--g">Entrega todo</th>
+            <th class="table__column--g">Algun detalle</th>
+          </tr>
+        </thead>
+        
+        <tbody data-table>
+        
+        </tbody>
+      </table>
+    </div>
+      <div class="modal-container modal--close">
+        <article class="modal">
+          <h2 class="modal__title">Eliminar</h2>
+          <button class="modal__close">X</button>
+          <p class="modal__text">¿Deseas continuar?</p>
+          <div class="modal__button-container">
+            <button class="modal__button modal__button--delete">
+              Eliminar
+            </button>
+            <button class="modal__button">No eliminar</button>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script src="../controllers/client.controller.complete.js" type="module"></script>
+  </body>
+</html>
